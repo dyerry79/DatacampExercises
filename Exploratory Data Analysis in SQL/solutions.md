@@ -41,7 +41,8 @@ SELECT company.name, tag_type.tag, tag_type.type
        ON tag_company.tag = tag_type.tag
   -- Filter to most common type
   WHERE type='cloud';
----
+  
+--
 
 ## Coalesce
 The coalesce() function can be useful for specifying a default or backup value when a column contains NULL values.
