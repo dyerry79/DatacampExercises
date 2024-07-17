@@ -29,7 +29,7 @@ Instructions 2/2
 Join the tag_company, company, and tag_type tables, keeping only mutually occurring records.
 Select company.name, tag_type.tag, and tag_type.type for tags with the most common type from the previous step.
 
----
+---sql
 -- Select the 3 columns desired
 SELECT company.name, tag_type.tag, tag_type.type
   FROM company
