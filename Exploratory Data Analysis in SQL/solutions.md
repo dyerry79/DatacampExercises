@@ -41,7 +41,6 @@ SELECT company.name, tag_type.tag, tag_type.type
        ON tag_company.tag = tag_type.tag
   -- Filter to most common type
   WHERE type='cloud';
-  
 ---
 
 ## Coalesce
