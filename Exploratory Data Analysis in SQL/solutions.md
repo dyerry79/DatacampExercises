@@ -28,6 +28,8 @@ Instructions 2/2
 50 XP
 Join the tag_company, company, and tag_type tables, keeping only mutually occurring records.
 Select company.name, tag_type.tag, and tag_type.type for tags with the most common type from the previous step.
+
+---
 -- Select the 3 columns desired
 SELECT company.name, tag_type.tag, tag_type.type
   FROM company
@@ -40,6 +42,8 @@ SELECT company.name, tag_type.tag, tag_type.type
   -- Filter to most common type
   WHERE type='cloud';
   
+---
+
 ## Coalesce
 The coalesce() function can be useful for specifying a default or backup value when a column contains NULL values.
 
